@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^7.0.0",
+    "react-chatbot-kit": "^2.2.2"
+  }
+}
