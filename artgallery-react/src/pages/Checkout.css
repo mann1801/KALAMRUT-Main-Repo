@@ -1,0 +1,146 @@
+.checkout-page {
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.checkout-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../styles/exhibition3.jpg') center/cover no-repeat fixed;
+  z-index: -2;
+}
+
+.checkout-page::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+/* Force all text inside order summary to black */
+.order-summary,
+.order-summary * {
+  color: #000 !important;
+}
+
+
+.order-summary, .checkout-form {
+  background: #f9f9f9;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  margin-top: 30px;
+}
+
+.order-summary h2, .checkout-form h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.summary-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-details h3 {
+  margin: 0 0 10px 0;
+}
+
+.item-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.total-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  text-align: right;
+}
+
+.total-section h3 {
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.place-order-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.place-order-button:hover {
+  background-color: #0056b3;
+}
+
+.status-sending {
+  color: #888;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.status-sent {
+  color: #28a745;
+  margin-top: 5px;
+}
+
+.status-error {
+  color: #dc3545;
+  margin-top: 5px;
+}

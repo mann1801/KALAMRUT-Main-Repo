@@ -1,0 +1,130 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-body {
+  display: flex;
+  gap: 20px;
+}
+
+.popup-image-container {
+  flex: 1;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.popup-details-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-details-container h2 {
+  margin-top: 0;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.price-section,
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.price-label,
+.quantity-label {
+  font-weight: bold;
+}
+
+.price-value {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.quantity-controls span {
+  font-size: 1.2rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.buy-now-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-now-button:hover {
+  background-color: #218838;
+}
